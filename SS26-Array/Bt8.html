@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt8</title>
+    </head>
+    <body>
+        <script>
+            let a=+prompt("Nhap chieu dai");
+            let b=+prompt("Nhap chieu rong");
+            if (isNaN(a)||isNaN(b)) {
+                console.log("INVALID"); 
+            }else{
+                let min=a>b? b:a;
+                let result=(a*b)/(min**2);
+
+                console.log("So hinh vuong toi thieu co the cat dc la "+parseInt(result));
+                console.log("Dien tich cua cac hinh vuong do la "+(min*2));
+            }
+    </script>
+    </body>
+</html>

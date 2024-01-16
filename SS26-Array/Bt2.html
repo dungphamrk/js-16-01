@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt3</title>
+    </head>
+    <body>
+            <script>
+                let n =+prompt("Nhap so phan tu trong mang ");
+                let arr= new Array();
+                let count=0;
+                for (let i = 0; i < n; i++) {
+                    let a=+prompt("Nhap phan tu thu "+ (i+1));
+                    arr[i]=a;
+                }
+                n=+prompt("Nhap so bat ky");
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i]===n) {
+                        console.log("VI tri cua phan tu do la ",arr[i]);
+                        count=1;
+                    }
+                }
+                if (count===0) {
+                    console.log("Ko tim thay phan tu do trong mang");
+                }
+                
+
+    </script>
+    </body>
+</html>

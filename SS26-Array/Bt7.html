@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bt7</title>
+  </head>
+  <body>
+    <script>
+        let arr = [1, 8, 5, 4, 5, 9, 7, 2, 1, 4];
+        let result = [];
+        let find_sum = +prompt("nhập vào một số bất kỳ");
+        check = 0;
+        for (let i = 0; i < arr.length - 1; i++) {
+            let sum = 0;
+            for (let j = i; j < arr.length; j++) {
+                sum += arr[j];
+                if (sum === find_sum) {
+                    result = arr.slice(i, j + 1);
+                    check = 1;
+                    break;
+                }
+            }
+            if (check) {
+                break;
+            }
+        }
+        console.log(result);
+    </script>
+  </body>
+</html>

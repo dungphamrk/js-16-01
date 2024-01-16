@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt1</title>
+    </head>
+    <body>
+        <script>
+            let n =+prompt("Nhap so phan tu trong mang ");
+            if (isNaN(n)||n<0) {
+                console.log("INVALID");
+            }else{
+            let arr= new Array();
+            let count=1;
+            for (let i = 0; i < n; i++) {
+                let a=+prompt("Nhap phan tu thu "+ (i+1));
+                arr[i]=a;
+            }
+            for (let i = 0; i < n; i++) {
+                if (arr[i]%1==0) {
+                    console.log(`arr(${i})=${arr[i]}`)
+                    count=0;
+                }
+            }
+            if (count) {
+                console.log("Trong mảng không tồn tại số nguyên");
+            }
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt3</title>
+    </head>
+    <body>
+            <script>
+                let n =+prompt("Nhap so phan tu trong mang ");
+                let arr= new Array();
+                for (let i = 0; i < n; i++) {
+                    arr[i]=0;
+                }
+                for (let i = 0; i < n; i++) {
+                    let a=+prompt("Nhap phan tu thu "+ (i+1));
+                     arr[a]++;
+                }
+                n=+prompt("Nhap so bat ky");
+                console.log("So lan xuat hien cua no trong mang la "+arr[n]);
+
+    </script>
+    </body>
+</html>
